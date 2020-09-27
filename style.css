@@ -129,8 +129,9 @@ body {
 	box-sizing: border-box;
 	color: #000;
 	font-family: "Source Sans Pro", sans-serif;
-	font-size: 1.8rem;
-	letter-spacing: -0.015em;
+	font-size: 1.6rem;
+    line-height: 1.63;
+    letter-spacing: -0.015em;
 	text-align: left;
 }
 
@@ -1543,7 +1544,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 ul.primary-menu {
 	display: flex;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 500;
 	letter-spacing: -0.0277em;
 	flex-wrap: wrap;
@@ -2658,7 +2659,7 @@ h2.entry-title {
 /* Single Pagination ------------------------- */
 
 .pagination-single {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	margin-top: 5rem;
 }
 
@@ -3723,7 +3724,7 @@ div.comment:first-of-type {
 }
 
 .comment-author {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 700;
 	letter-spacing: -0.027777778em;
 }
@@ -3989,7 +3990,7 @@ div.comment:first-of-type {
 	align-items: baseline;
 	display: flex;
 	flex-wrap: wrap;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 600;
 	margin: -1.5rem 0 0 -2.5rem;
 	width: calc(100% + 2.5rem);
@@ -4210,7 +4211,7 @@ div.comment:first-of-type {
 .wp-calendar-nav {
 	display: table;
 	width: 100%;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 
 .calendar_wrap tfoot td {
@@ -4381,7 +4382,7 @@ div.comment:first-of-type {
 /* FOOTER MENU */
 
 .footer-menu {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 700;
 	letter-spacing: -0.0277em;
 }
@@ -4728,7 +4729,7 @@ a.to-the-top > * {
 	}
 
 	table {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 
 	/* VANILLA GALLERIES */
@@ -4894,7 +4895,7 @@ a.to-the-top > * {
 	/* Menu Modal ---------------------------- */
 
 	button.close-nav-toggle {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		padding: 4rem 0;
 	}
 
@@ -5327,7 +5328,7 @@ a.to-the-top > * {
 	/* Entry Content ------------------------- */
 
 	.entry-content {
-		font-size: 2.1rem;
+		font-size: 1.6rem;
 	}
 
 	.entry-content p,
@@ -5416,7 +5417,7 @@ a.to-the-top > * {
 
 	.comment-respond p.comment-notes,
 	.comment-respond p.logged-in-as {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		letter-spacing: -0.025em;
 		margin: -2.5rem 0 4.4rem 0;
 	}
@@ -5597,7 +5598,7 @@ a.to-the-top > * {
 	/* FOOTER BOTTOM */
 
 	#site-footer {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		padding: 4.3rem 0;
 	}
 
