@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" id="olympus-google-fonts-css"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A200%2C300%2C400%2C600%2C700%2C900%2C200i%2C300i%2C400i%2C600i%2C700i%2C900i%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300i%2C400i%2C600i%2C700i%2C800i%7CSource+Code+Pro%3A200%2C300%2C400%2C500%2C600%2C700%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C900i&amp;display=swap&amp;ver=2.1.9"
+          type="text/css" media="all">
+</head>
+<body>
+<style>
+    .pricingSection {
+        background-color: #f3f7fc;
+    }
+
+    h1, h2, h3 {
+        font-family: "Open Sans";
+        font-weight: 300;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-family: "Source Sans Pro";
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    button {
+        padding: 1.1em 1.44em;
+    }
+
+    .wp-block-button__link {
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .wp-block-button, .wp-block-button__link {
+        margin-top: 0;
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-decoration: none;
+        text-transform: none;
+        border-radius: 1px;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    :root .has-background-color, button, .button, .faux-button, .wp-block-button__link, .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"], .wp-block-button, .comment-reply-link, .has-background.has-primary-background-color:not(.has-text-color), .has-background.has-primary-background-color *:not(.has-text-color), .has-background.has-accent-background-color:not(.has-text-color), .has-background.has-accent-background-color *:not(.has-text-color) {
+        color: #fff;
+    }
+
+</style>
+<style>
+    .flex-container {
+        display: flex;
+        max-width: 96rem !important;
+    }
+
+    .flex-item {
+        flex: 1;
+        width: 0;
+        background-color: white;
+        border: 1px solid #eee;
+        padding-top: 16px;
+    }
+
+    .flex-item h2,
+    .flex-item h3,
+    .flex-item h4 {
+        margin: 0!important;
+    }
+
+    .flex-item:not(:last-child) {
+        margin-right: 4px;
+    }
+
+    .package {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        transition: 0.25s;
+    }
+
+    .package .header,
+    .package .byline,
+    .package .price {
+        text-align: center;
+    }
+
+    .package .highlight {
+        background-color: #29b6f6;
+    }
+
+    .tick {
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbD0iIzAwNzNFNiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEyLjg1NiAyTDE0LjI3IDMuNDE0IDQuNjk1IDEyLjk4OSAwLjUgOC43OTQgMS45MTQgNy4zOCA0LjY5NSAxMC4xNjF6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjc2IC0zMjc5KSB0cmFuc2xhdGUoLTkyOCAyOTE1KSB0cmFuc2xhdGUoMTYwNCAzNjIpIHRyYW5zbGF0ZSgwIDIpIi8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K');
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    .packagePlus {
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0ib21hcm1tMHg1YSIgZD0iTTkgMTMuMzY0TDMuODcgMTYuMDYxIDQuODUgMTAuMzQ4IDAuNyA2LjMwMyA2LjQzNSA1LjQ3IDkgMC4yNzMgMTEuNTY1IDUuNDcgMTcuMyA2LjMwMyAxMy4xNSAxMC4zNDggMTQuMTMgMTYuMDYxeiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8Zz4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzg2IC0yOTg5KSB0cmFuc2xhdGUoLTkyOCAyOTE1KSB0cmFuc2xhdGUoMTcxNCA3NCkgdHJhbnNsYXRlKDExIDExKSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSIyb3YydGkwNXFiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI29tYXJtbTB4NWEiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICAgICAgICAgICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNvbWFybW0weDVhIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIGZpbGw9IiNGNUE2MjMiIG1hc2s9InVybCgjMm92MnRpMDVxYikiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTAgMEgzMlYzMkgweiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcgLTcpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=');
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .package li.summary {
+        padding-left: 44px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .package li {
+        background-color: #fff;
+        padding: 12px;
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .package li.feature {
+        padding-left: 39px;
+        padding-right: 39px;
+        text-indent: -20px;
+        font-size: 14px;
+    }
+
+    .package .gray {
+        background-color: #eee;
+        font-size: 1.25em;
+    }
+
+    .priceWidget button,
+    .priceWidget .wp-block-button__link {
+        background-color: #0071e3;
+        border: none;
+        border-radius: 1px;
+        color: #fff!important;
+        cursor: pointer;
+        text-transform: none;
+        font-size: 18px !important;
+        display: block;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .priceWidget button,
+        .priceWidget .wp-block-button__link {
+            padding: .75em;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .flex-container {
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            flex: 0 0 100%;
+            margin-bottom: 1em;
+            width: 100%;
+        }
+
+        .package:hover {
+            box-shadow: none;
+            transform: none;
+        }
+
+        button, .wp-block-button__link {
+            padding: .75em 1.5em;
+        }
+    }
+</style>
+<div class="pricingSection">
+    <div class="priceWidget flex-container">
+    <div class="flex-item">
+        <ul class="package">
+            <li class="header">
+                <div class="packagePlus"></div>
+                <h2>Small</h2></li>
+            <li class="byline"><h4>For teams who want to start collaborating the right way</h4></li>
+            <li class="price">€199/year</li>
+            <li>
+                <a class="wp-block-button__link has-background" style="background-color:#0071e3"
+                   href="https://app.bottlebooks.me/login/portfolio2020">Start trial</a>
+            </li>
+            <li class="summary">Lots to get started with, including</li>
+            <li class="feature">
+                <div class="tick"></div>
+                Store and manage up to 100 products
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Answer data collections
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Create and share public product lists
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Export product Info Sheets (PDF) and Data Files (Excel)
+            </li>
+        </ul>
+    </div>
+    <div class="flex-item">
+        <ul class="package">
+            <li class="header">
+                <div class="packagePlus"></div>
+                <h2>Medium</h2></li>
+            <li class="byline"><h4>For teams who want to take full power of their portfolio</h4></li>
+            <li class="price">€499/year</li>
+            <li>
+                <a class="wp-block-button__link has-background" style="background-color:#0071e3"
+                   href="https://app.bottlebooks.me/login/portfolio2020">Start trial</a>
+            </li>
+            <li class="summary">Everything in Small, plus:</li>
+            <li class="feature">
+                <div class="tick"></div>
+                Store and manage up to 500 products
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Support for read-only users
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Info sheet templates library
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Product data lifecyle management
+            </li>
+        </ul>
+    </div>
+    <div class="flex-item">
+        <ul class="package">
+            <li class="header">
+                <div class="packagePlus"></div>
+                <h2>Custom</h2></li>
+            <li class="byline"><h4>For teams who have special customization needs</h4></li>
+            <li class="price">Get in touch</li>
+            <li>
+                <a class="wp-block-button__link has-background" style="background-color:#0071e3"
+                   href="https://app.bottlebooks.me/login/portfolio2020">Start trial</a>
+            </li>
+            <li class="summary">Everything in Medium, plus</li>
+            <li class="feature">
+                <div class="tick"></div>
+                Store and manage up to unlimited products
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Multi-brand management
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Custom info sheet templates
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Custom Excel export templates
+            </li>
+            <li class="feature">
+                <div class="tick"></div>
+                Custom integrations such as GS1, Shopify or other APIs
+            </li>
+        </ul>
+    </div>
+</div>
+    <br><br><br>
+    <div class="priceWidget flex-container">
+        <div class="flex-item">
+            <ul class="package">
+                <li class="header">
+                    <div class="packagePlus"></div>
+                    <h2>Small</h2></li>
+                <li class="byline"><h4>Zeit, Geld und Nerven sparen mit professioneller Datenverwaltung</h4></li>
+                <li class="price">€199/Jahr</li>
+                <li>
+                    <a class="wp-block-button__link has-background" style="background-color:#0071e3"
+                       href="https://app.bottlebooks.me/login/portfolio2020">Starten Sie Ihren Test</a>
+                </li>
+                <li class="summary">Inklusive folgender Möglichkeiten:</li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Speichern und Verwalten von bis zu 100 Produkten
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Schnelle Beantwortung von Anfragen Ihrer Kunden
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Erstellen und Verteilen von Produktlisten
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Exportieren von Artikelpässen/Expertisen als PDF oder Excel-Dokument
+                </li>
+            </ul>
+        </div>
+        <div class="flex-item">
+            <ul class="package">
+                <li class="header">
+                    <div class="packagePlus"></div>
+                    <h2>Medium</h2></li>
+                <li class="byline"><h4>Ihr Geschäftsportfolio bestmöglich managen</h4></li>
+                <li class="price">€499/Jahr</li>
+                <li>
+                    <a class="wp-block-button__link has-background" style="background-color:#0071e3"
+                       href="https://app.bottlebooks.me/login/portfolio2020">Starten Sie Ihren Test</a>
+                </li>
+                <li class="summary">Alles wie in Small und zusätzlich</li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Speichern und Verwalten von bis zu 500 Produkten
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Support für alle User auch für diejenigen mit nur Lesezugriff
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Bibliothek mit Vorlagen für unterschiedlichste Artikelpässe
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Verwaltung des Produktdatenlebenszyklus
+                </li>
+            </ul>
+        </div>
+        <div class="flex-item">
+            <ul class="package">
+                <li class="header">
+                    <div class="packagePlus"></div>
+                    <h2>Individuell</h2></li>
+                <li class="byline"><h4>Benutzerdefinierte Anforderungen für perfekten in- und externen Austausch</h4></li>
+                <li class="price">Kontaktieren Sie uns</li>
+                <li>
+                    <a class="wp-block-button__link has-background" style="background-color:#0071e3"
+                       href="https://app.bottlebooks.me/login/portfolio2020">Starten Sie Ihren Test</a>
+                </li>
+                <li class="summary">Alles wie in Medium und zusätzlich:</li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Speichern und Verwalten von Produkten ohne Limitierung
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Verwaltung von sehr vielen verschiedenen Marken
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Benutzerdefinierte Vorlagen für Artikelpässe
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Benutzerdefinierte Vorlagen von Excel-Exporten
+                </li>
+                <li class="feature">
+                    <div class="tick"></div>
+                    Benutzerdefinierte Integrationen wie GS1, Shopify und andere APIs
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
