@@ -5368,8 +5368,8 @@ a.to-the-top > * {
 
 	.entry-content > .alignwide:not(.wp-block-group.has-background),
 	.entry-content > .alignfull:not(.wp-block-group.has-background) {
-		margin-bottom: 6rem;
-		margin-top: 6rem;
+		margin-bottom: 4rem;
+		margin-top: 4rem;
 	}
 
 	.entry-content > .alignwide {
@@ -5657,7 +5657,7 @@ a.to-the-top > * {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 2.8rem 0;
+        padding: 2.2rem 0;
 	}
 
 	.header-titles-wrapper {
@@ -6023,8 +6023,8 @@ a.to-the-top > * {
 
 	.entry-content > .alignwide:not(.wp-block-group.has-background),
 	.entry-content > .alignfull:not(.wp-block-group.has-background) {
-		margin-bottom: 8rem;
-		margin-top: 8rem;
+		margin-bottom: 4rem;
+		margin-top: 4rem;
 	}
 
 	/* ENTRY MEDIA */
