@@ -310,7 +310,6 @@ h6,
 .heading-size-6 {
 	font-size: 1.6rem;
 	letter-spacing: 0.03125em;
-	text-transform: uppercase;
 }
 
 p {
@@ -819,7 +818,6 @@ input[type="submit"] {
 	padding: 1.1em 1.44em;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
 	transition: opacity 0.15s linear;
 }
 
@@ -2394,7 +2392,6 @@ body:not(.singular) main > article:first-of-type {
 	letter-spacing: 0.036666667em;
 	margin: 0.5rem 0 0 1rem;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .entry-categories a:focus,
@@ -3795,7 +3792,6 @@ div.comment:first-of-type {
 	letter-spacing: 0.030833333em;
 	line-height: 1;
 	margin: 1.5rem 0 -1rem -1.5rem;
-	text-transform: uppercase;
 }
 
 .comment-footer-meta > * {
