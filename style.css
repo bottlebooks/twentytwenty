@@ -2662,7 +2662,7 @@ h2.entry-title {
 
 .pagination-single {
 	font-size: 1.6rem;
-	margin-top: 5rem;
+	margin-top: 0;
 }
 
 .pagination-single-inner {
@@ -4355,12 +4355,12 @@ div.comment:first-of-type {
 
 .footer-top-visible .footer-nav-widgets-wrapper,
 .footer-top-hidden #site-footer {
-	margin-top: 5rem;
+	margin-top: 0;
 }
 
 .reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper,
 .reduced-spacing.footer-top-hidden #site-footer {
-	border-top-width: 0.1rem;
+	border-top-width: 0;
 }
 
 .footer-top,
@@ -5578,7 +5578,7 @@ img.success-hollow-circle {
 
 	.footer-top-visible .footer-nav-widgets-wrapper,
 	.footer-top-hidden #site-footer {
-		margin-top: 8rem;
+		margin-top: 0;
 	}
 
 	/* FOOTER TOP */
