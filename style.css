@@ -273,7 +273,7 @@ h6,
 	font-weight: 300;
 	letter-spacing: -0.0415625em;
 	line-height: 1.25;
-	margin: 3.5rem 0 2rem;
+	margin: 0.5rem 0 0rem;
 }
 
 h1,
@@ -5213,7 +5213,7 @@ a.to-the-top > * {
 	.entry-content .wp-block-columns h4,
 	.entry-content .wp-block-columns h5,
 	.entry-content .wp-block-columns h6 {
-		margin: 3.5rem 0 2rem;
+        margin: 0.5rem 0 0rem;
 	}
 
 	/* BLOCK: COVER */
@@ -5339,7 +5339,7 @@ a.to-the-top > * {
 	.entry-content h1,
 	.entry-content h2,
 	.entry-content h3 {
-		margin: 6rem auto 3rem;
+        margin: 0.5rem auto 0rem;
 	}
 
 	.entry-content h4,
