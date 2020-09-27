@@ -265,7 +265,7 @@ h6,
 .faux-heading {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	font-weight: 700;
+	font-weight: 300;
 	letter-spacing: -0.0415625em;
 	line-height: 1.25;
 	margin: 3.5rem 0 2rem;
@@ -273,24 +273,32 @@ h6,
 
 h1,
 .heading-size-1 {
-	font-size: 3.6rem;
-	font-weight: 800;
-	line-height: 1.138888889;
+	font-size: 4.2rem;
+	font-weight: 300;
+	line-height: 1.33;
+	letter-spacing: -0.4px;
 }
 
 h2,
 .heading-size-2 {
 	font-size: 3.2rem;
+	letter-spacing: -0.2px;
+	line-height: 1.31;
 }
 
 h3,
 .heading-size-3 {
-	font-size: 2.8rem;
+	font-size: 2rem;
+	line-height: 1.4;
+	letter-spacing: normal;
 }
 
 h4,
 .heading-size-4 {
-	font-size: 2.4rem;
+	font-family: "Source Sans Pro";
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.2px;
 }
 
 h5,
@@ -3515,7 +3523,7 @@ figure.wp-block-table.is-style-stripes {
 .entry-content address,
 .entry-content .wp-caption-text,
 .entry-content .wp-block-file {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -3532,7 +3540,7 @@ figure.wp-block-table.is-style-stripes {
 	.entry-content address,
 	.entry-content .wp-caption-text,
 	.entry-content .wp-block-file {
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: "Open Sans", sans-serif;
 	}
 }
 
@@ -4769,22 +4777,22 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-		font-size: 6.4rem;
+		font-size: 4.2rem;
 	}
 
 	h2,
 	.heading-size-2 {
-		font-size: 4.8rem;
+		font-size: 3.2rem;
 	}
 
 	h3,
 	.heading-size-3 {
-		font-size: 4rem;
+		font-size: 2rem;
 	}
 
 	h4,
 	.heading-size-4 {
-		font-size: 3.2rem;
+		font-size: 1.8rem;
 	}
 
 	h5,
@@ -6082,7 +6090,7 @@ a.to-the-top > * {
 
 	h1,
 	.heading-size-1 {
-		font-size: 8.4rem;
+		font-size: 4.2rem;
 	}
 
 	/* Helper Classes ------------------------ */
