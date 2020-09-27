@@ -4170,7 +4170,7 @@ div.comment:first-of-type {
 .widget_pages a,
 .widget_meta a,
 .widget_nav_menu a {
-	font-weight: 700;
+	font-weight: 600;
 	text-decoration: none;
 }
 
@@ -6242,7 +6242,7 @@ a.to-the-top > * {
 	/* Widgets ------------------------------- */
 
 	.widget-content {
-		font-size: 2.1rem;
+		font-size: 1.4rem;
 	}
 
 	/* Site Footer --------------------------- */
