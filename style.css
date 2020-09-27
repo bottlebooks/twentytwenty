@@ -319,7 +319,7 @@ h6,
 
 p {
 	line-height: 1.5;
-	margin: 0 0 1em 0;
+	margin: 0.5em 0 1em 0;
 }
 
 em,
@@ -5889,7 +5889,7 @@ a.to-the-top > * {
 
 	.entry-content > .wp-block-group.alignwide.has-background,
 	.entry-content > .wp-block-group.alignfull.has-background {
-		padding: 8rem 4rem;
+		padding: 3rem 8rem 4rem 8rem;
 		margin-bottom: 0;
 		margin-top: 0;
 	}
