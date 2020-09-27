@@ -4359,6 +4359,16 @@ div.comment:first-of-type {
 	padding: 3rem 0;
 }
 
+/* Set footer color */
+.footer-nav-widgets-wrapper {
+	background-color: #333333!important;
+}
+
+/* Ensure both links and text are white */
+.footer-nav-widgets-wrapper,
+.footer-nav-widgets-wrapper a {
+	color: white!important;
+}
 
 /* Footer Top -------------------------------- */
 
