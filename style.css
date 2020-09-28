@@ -825,7 +825,6 @@ input[type="submit"] {
 	text-align: center;
 	text-decoration: none;
 	transition: opacity 0.15s linear;
-	margin-top: 1em;
 }
 
 button:focus,
