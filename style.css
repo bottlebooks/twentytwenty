@@ -274,7 +274,7 @@ h6,
 	font-weight: 300;
 	letter-spacing: -0.0415625em;
 	line-height: 1.25;
-	margin: 0.5rem 0 0rem;
+	margin: 0.5rem 0 0.5rem;
 }
 
 h1,
@@ -3495,7 +3495,7 @@ figure.wp-block-table.is-style-stripes {
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-	margin: 3.5rem auto 2rem;
+	margin: 0.5rem 0 0.5rem;
 }
 
 .entry-content ul ul,
